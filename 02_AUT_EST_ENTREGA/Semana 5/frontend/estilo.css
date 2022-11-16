@@ -80,15 +80,21 @@
 
 /*seletores para celurares*/
 @media screen and (max-width: 520px) {
+	body, html{
+        background:#ffffff;
+        color: rgb(0, 0, 0);
+        height: 122%;
+        width: 100%;
+    }
 	#conteudo{ 
 	   width: 100%;
-	   background:rgb(76, 12, 12);
+	   background:rgb(162, 35, 128);
        float: none;
        height: auto;
 	}
 	#lateral{ 
 	   width: 100%;
-	   background:rgb(118, 118, 24);
+	   background:rgb(30, 140, 181);
 	   float: none;
        height: auto;
 	}
