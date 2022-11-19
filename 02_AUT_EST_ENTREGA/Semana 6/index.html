@@ -5,15 +5,36 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
 	<title>Tutorial - Layout Responsivo</title>
   <link rel="stylesheet" type="text/css" href="estilo.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("#nome").hover(function(){
+        $(this).css("color", "#3e0f67");
+      },
+      function(){
+       $(this).css("color", "#fff");
+      });
+    });
+    $(document).ready(function(){
+      $("#imagem").click(function(){
+        $("#imagem").attr("src", "Picture 048.jpg");
+      });
+    });
+    $(document).ready(function(){
+      $("#principal").mouseenter(function(){
+        alert("OIE PROF!!!");
+      });
+    });
+  </script>
 </head>
 <body>
   <div id="principal">
     <div id="logo"><img src="https://www.inteli.edu.br/wp-content/uploads/2022/04/28103439/Logo-Container.png" alt="Logotipo Inteli"></div>
     <div id="conteudo">
       <div class="interno">
-        <h1>Mariana Brasil Görresen</h1>
+        <h1 id="nome">Mariana Brasil Görresen</h1>
         <h2>Aluna de Ciência da Computação</h2>
-        <p><img src="https://raw.githubusercontent.com/marigorresen/Modulo_2/main/02_AUT_EST_ENTREGA/Semana%205/ALUNOS_2022.2_MARIANA%20BRASIL_A2022_2A_0137.png" alt="imagem"></p>
+        <p><img src="https://raw.githubusercontent.com/marigorresen/Modulo_2/main/02_AUT_EST_ENTREGA/Semana%205/ALUNOS_2022.2_MARIANA%20BRASIL_A2022_2A_0137.png" id="imagem" alt="imagem"></p>
         <br/>
         <h1>Formação</h1>
         <h2>Inteli</h2>
