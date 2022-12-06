@@ -21,7 +21,7 @@ app.get('/curso', (req, res) => {
 	res.statusCode = 200;
 	res.setHeader('Access-Control-Allow-Origin', '*');
 	var db = new sqlite3.Database(DBPATH); // Abre o banco
-	var sql = 'SELECT * FROM Curso ORDER BY Nome_curso COLLATE NOCASE';
+	var sql = 'SELECT * FROM Curso ORDER BY CursoID COLLATE NOCASE';
 		db.all(sql, [],  (err, rows ) => {
 			if (err) {
 				throw err;
