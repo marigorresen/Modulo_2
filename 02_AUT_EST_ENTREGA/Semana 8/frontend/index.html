@@ -75,7 +75,7 @@
                 let saida = '';
                 let cursos = data;
                 cursos.map(function (cursos) {//map é um método que percorre o array
-                  saida += '<h2>' + `${cursos.Descricao_curso}` + '</h2><p>' + `${cursos.Nome_curso}` + '|' + `${cursos.Periodo_curso}` + ' | <a href="/removeCurso?CursoID=' + `${cursos.CursoID}` + '">X</a>| <a href="/atualiza.html?' + `${cursos.CursoID}` + '">UPDATE</a></p><br>'  
+                  saida += '<h2>' + `${cursos.Descricao_curso}` + '</h2><p>' + `${cursos.Nome_curso}` + '|' + `${cursos.Periodo_curso}` + ' | <a href="/removeCurso?CursoID=' + `${cursos.CursoID}` + '">DELETE</a> | <a href="/atualiza.html?' + `${cursos.CursoID}` + '">UPDATE</a></p><br>'  
                 });
                 divCurso.innerHTML = saida;
             })
