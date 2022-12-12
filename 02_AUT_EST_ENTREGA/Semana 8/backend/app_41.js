@@ -43,7 +43,7 @@ app.post('/insereCurso', urlencodedParser, (req, res) => {
 		    throw err;
 		}	
 	});
-	res.write('<p>CURSO INSERIDO COM SUCESSO!</p><a href="/index.html">VOLTAR</a>');
+	res.redirect("/");
 	db.close(); // Fecha o banco
 	res.end();
 });
@@ -77,7 +77,7 @@ app.post('/atualizaCurso', urlencodedParser, (req, res) => {
 		}
 		res.end();
 	});
-	res.write('<p>CURSO ATUALIZADO COM SUCESSO!</p><a href="/">VOLTAR</a>');
+	res.redirect("/");
 	db.close(); // Fecha o banco
 });
 
@@ -92,7 +92,7 @@ app.get('/removeCurso', urlencodedParser, (req, res) => {
 		if (err) {
 		    throw err;
 		}
-		res.write('<p>CURSO REMOVIDO COM SUCESSO!</p><a href="/index.html">VOLTAR</a>');
+		res.redirect("/");
 		res.end();
 	});
 	db.close(); // Fecha o banco
